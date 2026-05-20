@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Faculdade Teológica Logos
 
 Landing page responsiva desenvolvida utilizando HTML5 e CSS3 para apresentação de uma instituição de ensino teológico.
