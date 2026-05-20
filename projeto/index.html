@@ -13,48 +13,59 @@
     name="description"
     content="Curso de Teologia completo do básico ao bacharelado. Formação sólida, professores experientes e aulas acessíveis."
   />
-
-  <!-- Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- Fonte otimizada -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Cabeçalho -->
   <header class="header" id="topo">
-    <div class="container nav-container">
 
-      <a href="#topo" class="logo" aria-label="Página inicial">
-        Logos<span>Teologia</span>
-      </a>
+  <div class="container nav-container">
 
-      <nav class="nav" aria-label="Menu principal">
-        <ul class="nav-list">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#niveis">Níveis</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+    <a href="#topo" class="logo" aria-label="Página inicial">
+      Logos<span>Teologia</span>
+    </a>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="menu-toggle"
+    />
+    <label
+      for="menu-toggle"
+      class="hamburger"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-      <a href="#contato" class="btn btn-primary">
-        Inscreva-se
-      </a>
+    <!-- Navegação -->
+    <nav class="nav" aria-label="Menu principal">
 
-    </div>
-  </header>
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#niveis">Níveis</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-  <!-- Hero -->
+    </nav>
+
+    <a href="#contato" class="btn btn-primary nav-btn">
+      Inscreva-se
+    </a>
+
+  </div>
+
+</header>
   <main>
 
     <section class="hero">
@@ -109,8 +120,6 @@
 
       </div>
     </section>
-
-    <!-- Sobre -->
     <section class="about section" id="sobre">
 
       <div class="container about-grid">
@@ -145,8 +154,6 @@
       </div>
 
     </section>
-
-    <!-- Níveis -->
     <section class="levels section" id="niveis">
 
       <div class="container">
@@ -160,8 +167,7 @@
         </header>
 
         <div class="levels-grid">
-
-          <!-- Básico -->
+        
           <article class="level-card fade-up">
 
             <h3>Teologia Básica</h3>
@@ -188,7 +194,6 @@
 
           </article>
 
-          <!-- Médio -->
           <article class="level-card featured fade-up">
 
             <span class="badge">
@@ -219,7 +224,6 @@
 
           </article>
 
-          <!-- Bacharel -->
           <article class="level-card fade-up">
 
             <h3>Bacharel em Teologia</h3>
@@ -252,7 +256,6 @@
 
     </section>
 
-    <!-- Benefícios -->
     <section class="benefits section" id="beneficios">
 
       <div class="container">
@@ -301,7 +304,6 @@
 
     </section>
 
-    <!-- Depoimentos -->
     <section class="testimonials section" id="depoimentos">
 
       <div class="container">
@@ -344,7 +346,6 @@
 
     </section>
 
-    <!-- CTA -->
     <section class="cta section">
 
       <div class="container cta-box fade-up">
@@ -367,7 +368,6 @@
 
     </section>
 
-    <!-- Contato -->
     <section class="contact section" id="contato">
 
       <div class="container">
@@ -434,7 +434,6 @@
 
   </main>
 
-  <!-- Rodapé -->
   <footer class="footer">
 
     <div class="container footer-content">
