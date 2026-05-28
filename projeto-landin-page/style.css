@@ -165,7 +165,9 @@ p {
 }
 
 .menu-toggle {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hamburger {
@@ -190,6 +192,22 @@ p {
 
 .hamburger span + span {
   margin-top: 6px;
+}
+
+.hamburger span {
+  transform-origin: center;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 .hero {
@@ -485,11 +503,16 @@ select:focus-visible {
 
   .nav {
     width: 100%;
-
     max-height: 0;
     overflow: hidden;
 
-    transition: max-height 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease;
   }
 
   .nav-list {
@@ -505,6 +528,7 @@ select:focus-visible {
 
   .menu-toggle:checked ~ .nav {
     max-height: 400px;
+    opacity: 1;
   }
 
   .hero {
