@@ -57,7 +57,7 @@ Durante o processo foram realizados:
 
 O relatório completo pode ser acessado abaixo:
 
-[📄 Relatório de Curadoria](docs/curadoria-ia.md)
+[📄 Relatório de Curadoria](docs/curadoria-IA.md)
 
 ---
 

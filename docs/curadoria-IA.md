@@ -236,4 +236,3 @@ CSS modificado:
   }
 
 }
-
